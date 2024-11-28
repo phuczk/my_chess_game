@@ -1,15 +1,5 @@
 <script lang="ts">
-  import "../../app.css";
-  interface Props {
-    rowPosition: number;
-    colPosition: number;
-    isBlack: boolean;
-    isChoose: boolean;
-    movePawn: (newRow: number, newCol: number) => void;
-  }
-
-  let { rowPosition, colPosition, isBlack, isChoose, movePawn }: Props =
-    $props();
+  let { rowPosition, colPosition, isBlack, isChoose, movePawn } = $props();
 
   const movePiece = () => {
     movePawn(rowPosition, colPosition);
